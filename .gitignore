@@ -1,0 +1,5 @@
+/corpus
+/venv*
+
+*pyc
+.settings
