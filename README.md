@@ -21,12 +21,14 @@ pdftotext -layout minkalaok_970501.pdf
 ```
 
 ### 臺灣言語資料庫
-在`臺灣言語資料庫`專案目錄下
+#### 產生yaml格式
 ```bash
-git clone https://github.com/Taiwanese-Corpus/moe_minkalaok.git
-sudo apt-get install -y python-virtualenv
+sudo apt-get install -y python3 python-virtualenv
 virtualenv --python=python3 venv
 . venv/bin/activate
-pip install -r requirements.txt
-echo "from 轉到臺灣言語資料庫.整合到資料庫 import 走 ; 走()" | PYTHONPATH=moe_minkalaok python manage.py shell
+pip install pyyaml
+python 產生臺灣言語資料庫格式.py
 ```
+
+#### 匯入資料
+在`臺灣言語資料庫`專案目錄下
