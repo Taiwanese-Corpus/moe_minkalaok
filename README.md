@@ -32,3 +32,6 @@ python 產生臺灣言語資料庫格式.py
 
 #### 匯入資料
 在`臺灣言語資料庫`專案目錄下
+```bash
+python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/moe_minkalaok/閩南語卡拉OK正字字表.yaml
+```
